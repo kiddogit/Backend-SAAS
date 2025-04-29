@@ -1,6 +1,13 @@
-// const app = require("express")()
 const express = require("express")
 const app = express()
+
+require("./database/connection")
+
+// app.get("/",(req,res)=>{
+//     res.json({
+//         message: "Hello"
+//     })
+// })
 
 app.get("/books", (req, res)=>{
     res.json({
