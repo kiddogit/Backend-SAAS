@@ -11,25 +11,25 @@ require("./database/connection")
 
 app.get("/books", (req, res)=>{
     res.json({
-        message: "Book fetced successfylly."
+        message: "Book fetced successfully."
     })
 })
 
 app.post("/books", (req, res)=>{
     res.json({
-        message: "Book created successfylly."
+        message: "Book created successfully."
     })
 })
 
 app.delete("/books/:id", (req, res)=>{
     res.json({
-        message: "Book deleted successfylly."
+        message: "Book deleted successfully."
     })
 })
 
 app.patch("/books/:id", (req, res)=>{
     res.json({
-        message: "Book updated successfylly."
+        message: "Book updated successfully."
     })
 })
 
