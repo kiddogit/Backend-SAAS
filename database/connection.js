@@ -3,7 +3,7 @@
 
 const {Sequelize, DataTypes} = require("sequelize")
 
-const sequelize = new Sequelize("postgresql://postgres.mdxdtwmargzjipcdcdmt:[YOUR-PASSWORD]@aws-0-ap-south-1.pooler.supabase.com:6543/postgres")
+const sequelize = new Sequelize("postgresql://postgres.mdxdtwmargzjipcdcdmt:rajbanshialka@aws-0-ap-south-1.pooler.supabase.com:6543/postgres?pgbouncer=true")
 
 sequelize.authenticate()
 .then(()=>{
